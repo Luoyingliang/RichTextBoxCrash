@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +23,7 @@ namespace RichTextBoxCrash.NetCore
     public MainWindow()
     {
       InitializeComponent();
+      this.PreviewKeyDown += (o, e) => this.Title = $"You Press: {e.Key}";
     }
   }
 }

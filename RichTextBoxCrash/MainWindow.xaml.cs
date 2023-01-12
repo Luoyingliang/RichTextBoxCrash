@@ -1,4 +1,4 @@
-﻿namespace RichTextBoxCrash
+namespace RichTextBoxCrash
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -8,6 +8,7 @@
         public MainWindow()
         {
             InitializeComponent();
+            this.PreviewKeyDown += (o, e) => this.Title = $"You Press: {e.Key}";
         }
     }
 }
